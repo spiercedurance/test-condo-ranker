@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    style.
+      body { font-family: Arial, sans-serif; margin: 2em; }
+      h1 { color: #333; }
+      .game { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+      .game h2 { margin-top: 0; }
+      .prices { list-style: none; padding: 0; }
+      .prices li { display: inline-block; background-color: #f2f2f2; border-radius: 4px; padding: 8px 12px; margin-right: 8px; }
+      .prices .retailer { font-weight: bold; }
+  body
+    h1= title
+    div#games-container
+      each game in games
+        div.game
+          h2= game.name
+          ul.prices
+            each priceInfo in game.prices
+              li
+                span.retailer= priceInfo.retailer + ': '
+                span.price= '$' + priceInfo.price
