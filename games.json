@@ -25,5 +25,37 @@
       { "retailer": "Amazon", "price": "59.99" },
       { "retailer": "GameStop", "price": "59.99" }
     ]
+  },
+  {
+    "id": 4,
+    "name": "F-Zero: Galactic Grand Prix",
+    "prices": [
+      { "retailer": "Amazon", "price": "49.99" },
+      { "retailer": "Best Buy", "price": "49.99" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Star Fox: Sector Z",
+    "prices": [
+      { "retailer": "Walmart", "price": "59.99" },
+      { "retailer": "GameStop", "price": "59.99" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pikmin 5: World Garden",
+    "prices": [
+      { "retailer": "Amazon", "price": "59.99" },
+      { "retailer": "Walmart", "price": "59.99" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kirby's Dream Buffet 2",
+    "prices": [
+      { "retailer": "Best Buy", "price": "39.99" },
+      { "retailer": "GameStop", "price": "39.99" }
+    ]
   }
 ]

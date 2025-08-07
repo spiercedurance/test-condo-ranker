@@ -6,19 +6,20 @@ html
       body { font-family: Arial, sans-serif; margin: 2em; background-color: #f9f9f9; }
       h1 { color: #333; text-align: center; margin-bottom: 1em; }
       #games-container { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
-      .game { border: 1px solid #ddd; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex: 1 1 300px; max-width: 400px; }
-      .game-theme-0 { background-color: #e6f7ff; } /* Light Blue */
-      .game-theme-1 { background-color: #f6ffed; } /* Light Green */
-      .game-theme-2 { background-color: #fffbe6; } /* Light Yellow */
-      .game h2 { margin-top: 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5em; margin-bottom: 0.5em; }
+      .game { border: 1px solid #ddd; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex: 1 1 300px; max-width: 400px; color: white; }
+      .game-theme-0 { background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); }
+      .game-theme-1 { background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); }
+      .game-theme-2 { background-image: linear-gradient(to right top, #ff3f3f, #ff662b, #ff8c00, #ffb100, #f8d600); }
+      .game-theme-3 { background-image: linear-gradient(to right top, #4d0b5c, #6d2076, #8e3691, #b14dad, #d465ca); }
+      .game h2 { margin-top: 0; border-bottom: 1px solid rgba(255,255,255,0.5); padding-bottom: 0.5em; margin-bottom: 0.5em; text-shadow: 1px 1px 2px rgba(0,0,0,0.7); }
       .prices { list-style: none; padding: 0; }
-      .prices li { display: inline-block; background-color: rgba(255,255,255,0.6); border-radius: 4px; padding: 8px 12px; margin: 4px; }
+      .prices li { display: inline-block; background-color: rgba(0,0,0,0.2); border-radius: 4px; padding: 8px 12px; margin: 4px; }
       .prices .retailer { font-weight: bold; }
   body
     h1= title
     div#games-container
       each game, i in games
-        div.game(class=`game-theme-${i % 3}`)
+        div.game(class=`game-theme-${i % 4}`)
           h2= game.name
           ul.prices
             each priceInfo in game.prices
