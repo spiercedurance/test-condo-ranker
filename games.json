@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "The Legend of Zelda: Echoes of Eternity",
+    "prices": [
+      { "retailer": "Amazon", "price": "59.99" },
+      { "retailer": "Walmart", "price": "59.99" },
+      { "retailer": "Best Buy", "price": "59.99" },
+      { "retailer": "GameStop", "price": "59.99" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Metroid Prime 4: Revival",
+    "prices": [
+      { "retailer": "Amazon", "price": "49.99" },
+      { "retailer": "Walmart", "price": "49.99" },
+      { "retailer": "Best Buy", "price": "49.99" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Super Mario Odyssey 2",
+    "prices": [
+      { "retailer": "Amazon", "price": "59.99" },
+      { "retailer": "GameStop", "price": "59.99" }
+    ]
+  }
+]

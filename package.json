@@ -1,15 +1,15 @@
 {
-  "name": "opsworks",
+  "name": "game-price-tracker",
   "version": "1.0.0",
+  "description": "A simple app to display a list of games and their prices.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "body-parser": "^1.13.2",
-    "express": "^4.13.0",
-    "jade": "^1.11.0"
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/awslabs/opsworks-windows-example-nodejs"
-  },
-  "license": "Apache 2.0",
-  "description": "A sample Node.JS application for AWS OpsWorks"
+  "author": "",
+  "license": "ISC"
 }
