@@ -3,18 +3,22 @@ html
   head
     title= title
     style.
-      body { font-family: Arial, sans-serif; margin: 2em; }
-      h1 { color: #333; }
-      .game { border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
-      .game h2 { margin-top: 0; }
+      body { font-family: Arial, sans-serif; margin: 2em; background-color: #f9f9f9; }
+      h1 { color: #333; text-align: center; margin-bottom: 1em; }
+      #games-container { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+      .game { border: 1px solid #ddd; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex: 1 1 300px; max-width: 400px; }
+      .game-theme-0 { background-color: #e6f7ff; } /* Light Blue */
+      .game-theme-1 { background-color: #f6ffed; } /* Light Green */
+      .game-theme-2 { background-color: #fffbe6; } /* Light Yellow */
+      .game h2 { margin-top: 0; border-bottom: 1px solid #ccc; padding-bottom: 0.5em; margin-bottom: 0.5em; }
       .prices { list-style: none; padding: 0; }
-      .prices li { display: inline-block; background-color: #f2f2f2; border-radius: 4px; padding: 8px 12px; margin-right: 8px; }
+      .prices li { display: inline-block; background-color: rgba(255,255,255,0.6); border-radius: 4px; padding: 8px 12px; margin: 4px; }
       .prices .retailer { font-weight: bold; }
   body
     h1= title
     div#games-container
-      each game in games
-        div.game
+      each game, i in games
+        div.game(class=`game-theme-${i % 3}`)
           h2= game.name
           ul.prices
             each priceInfo in game.prices
